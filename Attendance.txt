@@ -1,4 +1,4 @@
 StudentID: 2213110980
 Fullname(in English):Pakin kittipol
 AKA : Pakinkitti
-ClassDetail:Control Statement & Confirm Dialog
+ClassDetail: String Methods and Defined Methods
