@@ -1,5 +1,0 @@
-Date : 08-Dec-2022
-StudentID: 2213110980
-Fullname(in English): Pakin kittipol
-AKA:Pakinkitti
-ClassDetail : User-Defined Method with String
