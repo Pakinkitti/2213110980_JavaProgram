@@ -2,4 +2,4 @@ Date : 22-Dec-2022
 StudentID: 2213110980
 Fullname(in English): Pakin kittipol
 AKA:Pakinkitti
-ClassDetail : Class and Object, Array of Object
+ClassDetail :   GUI
