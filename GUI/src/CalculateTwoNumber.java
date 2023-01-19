@@ -107,7 +107,7 @@ public class CalculateTwoNumber extends JFrame {
 		contentPane.add(Option);
 		
 		final JCheckBox OptionBox = new JCheckBox("show result at DialogBox");
-		OptionBox.setBounds(118, 145, 143, 23);
+		OptionBox.setBounds(118, 145, 199, 23);
 		contentPane.add(OptionBox);
 		
 		final JButton btnOk = new JButton("OK");
