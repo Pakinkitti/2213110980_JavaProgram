@@ -18,7 +18,6 @@ public class AuthorDemo2 {
 		}
 			System.out.println();
 			for(int i = 1; i < A.length;i++) {
-				System.out.println(i+" "+a);
 			}
 		}
 	public static void Line() {

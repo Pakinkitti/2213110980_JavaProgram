@@ -1,63 +1,50 @@
 
 public class Student {
 	private String name;
-	private int score;
-	public void setName(String Name) {
-		name = Name;
+	private String address;
+	private String[] courses;
+	private int[] grades;
+	private int numCouses;
+	private static final int MAX_COURSE = 30;
+	
+	public Student(String name,String address) {
+		this.name = name;
+		this.address = address ;
+		courses = new String[MAX_COURSE];
+		grades = new int [MAX_COURSE];
+		numCouses = 0;
 	}
 	public String getName() {
-		return name;
+		return this.name;
 	}
-	public void setScore(int Score) {
-		Score = score ;
+	public String getAddress() {
+		return this.address;
 	}
-	public int getScore() {
-		return score;
+	public void setAddress(String string) {
+		this.address = address;
 	}
-	public boolean checkscore() {
-		if(score <= 0 && score <=100) {
-			return true;
+	public String toString() {
+		return getName() + " (" + getAddress()+")";
+	}
+	public void addCourseGrade(String course, int grade) {
+		courses[numCouses] = course ;
+		grades[numCouses] = grade ;
+		++numCouses ; 
+	}
+	public void printGrade() {
+		System.out.print(name);
+		for(int i = 0;i<numCouses;i++) {
+			System.out.print(" " + courses[i]+":" +grades[i]);
+			
 		}
-		else {
-			return false;
-		}
+		System.out.println();
 	}
-	public boolean isPass() {
-		if(score >=50)
-		{
-			return true;
+	public double getAverageGrade() {
+		int sum = 0;
+		for(int i =0;i<numCouses;i++) {
+			sum = grades[i];
 		}
-		else {
-			return false;
-	
-		}  
+		return (double)sum/numCouses;
 	}
-	public String findGrade(int score) {
-			if (score >=80&& score <=100) {
-				return "A";
-			}
-			else if (score >=75&&score <=79) {
-				return "B+";
-			}
-			else if (score >=70&&score <=74) {
-				return "B";
-			}
-			else if (score >=65&&score <=69) {
-				return "C+";
-			}
-			else if (score >=60&&score <=64) {
-				return "C";
-			}
-			else if (score >=55&&score <=59) {
-				return "D+";
-			}
-			else if (score >=50&&score <=54) {
-				return "D";
-			}
-			else {
-				return "F";
-			}
-		}
-	
-	}	
+}
 
