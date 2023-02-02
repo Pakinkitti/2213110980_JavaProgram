@@ -13,7 +13,7 @@ public class Theater extends Movie{
 		if(theaterNo >= 1 ||theaterNo <= 11) {
 			return "Basic Theater";
 		}
-		else if(theaterNo == 12 || theaterNo <= 14) {
+		else if(theaterNo >= 12 || theaterNo <= 14) {
 			return "Sweet Theater";
 		}
 		else if (theaterNo ==  15) {
