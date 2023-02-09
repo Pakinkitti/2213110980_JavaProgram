@@ -1,4 +1,5 @@
 
-public class Book2 {
-
+public interface Book2 {
+	public String getTitle();
+	public int totalPublicYear();
 }
